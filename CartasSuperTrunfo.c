@@ -11,31 +11,31 @@ int main() {
     float area, pib; //%f
   
   // Área para entrada de dados
-    printf("Digite o Estado (Letra de 'A' até 'H'): \n");
-    scanf("%s", &estado);
+    printf("Digite o Estado Letra de 'A' até 'H': \n");
+    scanf(" %s", &estado);
 
-    printf("Código da Carta: (A letra do estado seguida de um número de 01 a 04): \n");
-    scanf("%s", &codigocarta);
+    printf("Código da Carta: A letra do estado seguida de um número de 01 a 04: \n");
+    scanf(" %s", codigocarta);
 
     printf("Digite o nome da Cidade: \n");
-    scanf("%s", &nomecidade);
+    scanf(" %s", nomecidade);
 
     printf("Digite o número de habitantes: \n");
-    scanf("%d", &populacao);
+    scanf(" %d", &populacao);
 
     printf("Digite a área da cidade em quilômetros quadrados: \n");
-    scanf("%f", &area);
+    scanf(" %f", &area);
 
     printf("Digite o PIB da cidade: \n");
-    scanf("%f", &pib);
+    scanf(" %f", &pib);
 
     printf("Digite número de Pontos Turísticos: \n");
-    scanf("%d", &npturisticos);
+    scanf(" %d", &npturisticos);
 
 
   // Área para exibição dos dados da cidade
 
-    printf("Nome do Estado: %s - Código da Carta: %s - Nome da Cidade: %s \n", estado, codigocarta, nomecidade);
+    printf("Nome do Estado: %c - Código da Carta: %s - Nome da Cidade: %s \n", estado, codigocarta, nomecidade);
     printf("População: %d - Número de Pontos TurísticAos: %d", populacao, npturisticos);
     printf("Área: %f - PIB: %f", area, pib);
   
