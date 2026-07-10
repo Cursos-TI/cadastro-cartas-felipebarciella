@@ -43,8 +43,8 @@ int main() {
 
     printf("- Nome do Estado: %c \n - Código da Carta: %s \n - Nome da Cidade: %s \n", estado, codigocarta, nomecidade);
     printf("- População: %d \n - Número de Pontos Turísticos: %d \n", populacao, npturisticos);
-    printf("- Área: %f \n - PIB: %f \n", area, pib);
-    printf("- Densidade Populacional: %f \n - PIB Per Capta: %f \n", densidade, pibpercapta);
+    printf("- Área: %.2f \n - PIB: %.2f \n", area, pib);
+    printf("- Densidade Populacional: %.2f \n - PIB Per Capta: %.2f \n", densidade, pibpercapta);
   
 return 0;
 } 
