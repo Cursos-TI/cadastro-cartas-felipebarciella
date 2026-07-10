@@ -6,10 +6,11 @@
 
 int main() {
   // Área para definição das variáveis para armazenar as propriedades das cidades
-    char estado, codigocarta [3], nomecidade [20]; //%s
+    char estado, codigocarta [5], nomecidade [ 20]; //%s
     int populacao, npturisticos; //%d
-    float area, pib; //%f
+    float pib, densidade, pibpercapta, area; //%f
   
+
   // Área para entrada de dados
     printf("Digite o Estado Letra de 'A' até 'H': \n");
     scanf(" %s", &estado);
@@ -32,12 +33,18 @@ int main() {
     printf("Digite número de Pontos Turísticos: \n");
     scanf(" %d", &npturisticos);
 
+      // Cálculo
+
+  densidade = area / populacao;
+  pibpercapta = pib / populacao;
+
 
   // Área para exibição dos dados da cidade
 
-    printf("Nome do Estado: %c - Código da Carta: %s - Nome da Cidade: %s \n", estado, codigocarta, nomecidade);
-    printf("População: %d - Número de Pontos TurísticAos: %d", populacao, npturisticos);
-    printf("Área: %f - PIB: %f", area, pib);
+    printf("- Nome do Estado: %c \n - Código da Carta: %s \n - Nome da Cidade: %s \n", estado, codigocarta, nomecidade);
+    printf("- População: %d \n - Número de Pontos Turísticos: %d \n", populacao, npturisticos);
+    printf("- Área: %f \n - PIB: %f \n", area, pib);
+    printf("- Densidade Populacional: %f \n - PIB Per Capta: %f \n", densidade, pibpercapta);
   
 return 0;
 } 
